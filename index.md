@@ -15,6 +15,8 @@
  - [专业课](专业课.html)
 
  - [笔记01](笔记01.html)
+ 
+ - [网站收藏夹](收藏夹.html)
 
 ----
 ### 网站：
@@ -33,5 +35,5 @@
  > 此页面使用Markdown标记语言编写，用StackEditor发布为html页面。
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjUxMTQzOCwxODI2OTU4MjYzXX0=
+eyJoaXN0b3J5IjpbLTc1OTcyNjExNSwxODI2OTU4MjYzXX0=
 -->
