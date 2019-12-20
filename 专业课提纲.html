@@ -15,11 +15,12 @@
 </blockquote>
 <h1 id="专业课提纲">专业课提纲</h1>
 <blockquote>
-<p>最后更新于：2019年12月19日</p>
+<p>最后更新于：2019年12月20日</p>
 </blockquote>
 <blockquote>
-<p>以下知识点是我看到一个写一个的，顺序不分先后。<br>
-知识点后附上了相关真题</p>
+<p>这里总结了历年真题中常考的知识点<br>
+知识点后附上了相关真题<br>
+一些知识点还没写完</p>
 </blockquote>
 <p>笔记格式说明：<br>
 <strong>加粗字体</strong>用于表示小标题、句子主干<br>
@@ -34,9 +35,6 @@
 </li>
 <li>
 <p><a href="#GIS%E7%9A%84%E4%B8%89%E5%B1%82%E5%90%AB%E4%B9%89">GIS的三层含义</a></p>
-</li>
-<li>
-<p><a href="#%E7%9F%A2%E9%87%8F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">矢量数据结构</a></p>
 </li>
 <li>
 <p><a href="#%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%BB%93%E6%9E%84">模型与结构</a></p>
@@ -218,6 +216,8 @@
 <p><strong>相关真题：</strong></p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2008">2008 简答题</a><br>
 5、数据模型的三大要素是什么？</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2007">2007 论述题</a><br>
+1、试从概念模型和逻辑模型的角度论述空间数据模型的主要内容及其物理实现技术？</p>
 <hr>
 <p><a id="三类空间数据的比较"></a></p>
 <h3 id="三类空间数据的比较">三类空间数据的比较</h3>
@@ -283,33 +283,323 @@
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2015">2015 简答题</a><br>
 3、试述镶嵌数据模型在空间数据模型中的地位和作用。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2010">2010 简答题</a><br>
+1、简述GIS中空间数据的特点<br>
 3、简述和比较矢量与栅格数据的特点</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2006">2006 简答题</a><br>
 6、比较矢量数据结构和栅格数据结构的优缺点。</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2001">2001 简述题</a><br>
+1、地理信息系统中图形数据结构的主要类型及它们各自的特点。</p>
 <hr>
 <p><a id="矢量数据结构"></a></p>
 <h3 id="矢量数据结构">矢量数据结构</h3>
 <p><strong>(1) 实体数据结构（非拓扑结构）：</strong></p>
 <p><strong>面条结构（Spaghetti结构）</strong><br>
-典型例子：ArcGIS的shapefile格式</p>
+典型例子：ArcGIS的shapefile文件格式</p>
+<p>数据结构如下所示：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">多边形号</th>
+<th align="center">点坐标</th>
+<th align="center">属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">( x1, y1 ), ( x2, y2 ), ( x4, y4 ), ……, ( x1, y1 )</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">( x1, y1 ), ( x8, y8 ), ( x7, y7 ), ……, ( x1, y1 )</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>缺点：</p>
+<ul>
+<li>公共边重复存储，数据冗余，难以保证数据独立性和一致性；</li>
+<li>无拓扑关系，只适用于显示、输出及一般查询；</li>
+<li>多边形分解和合并不易进行，邻域处理较复杂；</li>
+<li>处理嵌套多边形（多边形的空洞）比较麻烦；</li>
+</ul>
+<p>适用范围：<br>
+制图及一般查询，不适合复杂的空间分析。</p>
 <p><strong>(2) 拓扑数据结构：</strong></p>
 <p><strong>索引式结构</strong>，弧段/点位字典模型</p>
 <p>数据结构如下所示：</p>
-<p>多边形表</p>
-<p>弧段表</p>
-<p>点坐标表</p>
-<p><strong>双重独立编码结构，DIME</strong><br>
-这种数据结构最早是由美国人口统计系统采用的一种编码方式，简称DIME(dual independent map encoding)编码系统，它是以城市街道为编码主体，它的特点是采用了拓扑编码结构，这种结构最适合于城市信息系统。</p>
-<p><strong>链状双重独立编码结构</strong><br>
-链状双重独立式数据结构是DIME数据结构的一种改进。在DIME中，一条边只能用直线两端点的序号及相邻的多边形来表示，而在链状数据结构中，将若干直线段合为一个弧段（或链段）,每个弧段可以有许多中间点。<br>
-典型例子：ArcGIS的Coverage数据模型</p>
+<p>多边形表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">多边形号</th>
+<th align="center">弧段号</th>
+<th align="center">属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">a, b, e</td>
+<td align="center">……</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">e, d, b</td>
+<td align="center">……</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>弧段表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">弧段号</th>
+<th align="center">点号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">5, 4, 3, 2, 1</td>
+</tr>
+<tr>
+<td align="center">b</td>
+<td align="center">8, 9, 10</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>点坐标表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">点号</th>
+<th align="center">坐标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">( x1, y1 )</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">( x2, y2 )</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p><strong>双重独立编码结构，DIME</strong><br>
+这种数据结构最早是由美国人口统计系统采用的一种编码方式，简称DIME(dual independent map encoding)编码系统。它是以城市街道为编码主体，它的特点是采用了拓扑编码结构，这种结构最适合于城市信息系统（如城市地级宗地的管理）。</p>
 <p>数据结构如下所示：</p>
-<p>多边形表</p>
-<p>弧段表</p>
-<p>弧段节点表</p>
-<p>点坐标表</p>
-<p><strong>POLYVRT</strong><br>
-PLOYVRT模型（POLYgon convertor，多边形转换器）：</p>
+<p>线段表：</p>
+<blockquote>
+<p>把多边形的边（弧段）拆成一条条线段，每一条直线段都列在此表中</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th align="center">线号</th>
+<th align="center">起点</th>
+<th align="center">终点</th>
+<th align="center">左多边形</th>
+<th align="center">右多边形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">1</td>
+<td align="center">6</td>
+<td align="center">Q</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="center">b</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">Q</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>点坐标表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">点号</th>
+<th align="center">坐标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">( x1, y1 )</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">( x2, y2 )</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p><strong>链状双重独立编码结构</strong><br>
+链状双重独立式数据结构是DIME数据结构的一种改进。</p>
+<ul>
+<li>在DIME中，一条边只能用直线两端点的序号及相邻的多边形来表示；</li>
+<li>而在链状数据结构中，将若干直线段合为一个弧段（或链段）,每个弧段可以有许多中间点。</li>
+</ul>
+<p>典型例子：ArcGIS的Coverage数据模型</p>
+<p>数据结构如下所示：</p>
+<p>多边形表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">多边形号</th>
+<th align="center">弧段号</th>
+<th align="center">属性<br>如周长、面积等</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">a, b, e</td>
+<td align="center">……</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">e, d, b</td>
+<td align="center">……</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>弧段表：</p>
+<blockquote>
+<p>一行表示一整条弧段，只存弧段的起点和终点，中间点存在弧段节点表中</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th align="center">弧段号</th>
+<th align="center">起点</th>
+<th align="center">终点</th>
+<th align="center">左多边形</th>
+<th align="center">右多边形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">5</td>
+<td align="center">1</td>
+<td align="center">Q</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="center">b</td>
+<td align="center">7</td>
+<td align="center">1</td>
+<td align="center">A</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>弧段节点表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">弧段号</th>
+<th align="center">点号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">a</td>
+<td align="center">5, 4, 3, 2, 1</td>
+</tr>
+<tr>
+<td align="center">b</td>
+<td align="center">7, 8, 1</td>
+</tr>
+<tr>
+<td align="center">c</td>
+<td align="center">1, 9, 10, 11, 12, 13</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>点坐标表：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">点号</th>
+<th align="center">坐标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">( x1, y1 )</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">( x2, y2 )</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">( x3, y3 )</td>
+</tr>
+<tr>
+<td align="center">……</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p><strong>POLYVRT</strong><br>
+PLOYVRT模型（Polygon Convertor，多边形转换器）：</p>
 <ul>
 <li>美国计算机图形与空间分析实验室基于弧段结构构造；</li>
 <li>POLYVRT模型综合了弧段/点位字典模型和DIME模型，但它的点位字典划分为独立的点和结点。</li>
@@ -323,15 +613,27 @@ PLOYVRT模型（POLYgon convertor，多边形转换器）：</p>
 <li>以及为点建立一个点所关联的弧段目录表，</li>
 <li>并在弧段关系表中，将点所关联的弧段和组成多边形的边界弧段用串行指针连接起来。</li>
 </ul>
+<p><strong>DIME 与 POLYVRT 的比较</strong><br>
+DIME与POLYVRT模型本质是一样的，都使用<strong>边界线</strong>作为描述多边形空间关系的基本单元。<br>
+区别在于：边界线的选择策略不同。</p>
+<ul>
+<li>DIME模型以两个数据点间的线段为关系的描述和记录单元，</li>
+<li>而POLYVRT模型以两个结点的链为记录单元。</li>
+</ul>
+<p>两种模型都不能对线要素间的邻接关系进行显示描述。</p>
 <p><strong>相关真题：</strong></p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2015">2015 简答题</a><br>
 2、描述矢量数据的链式双重独立编码的文件及其数据结构是什么？</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2015">2015 论述题</a><br>
 2、试结合拓扑数据结构谈谈你对于“从线几何向面拓扑”发展历程的理解。</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2014">2014 简答题</a><br>
+2、描述矢量数据的链式双重独立编码的文件及其数据结构是什么？</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2012">2012 简答题</a><br>
 5、通过实例分析和比较DIME与POLYVRT的联系和区别。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2011">2011 简答题</a><br>
 6、根据或设计一个拓扑数据结构表（比如DIME或POLYVRT），写出一个算法完成下列查询：已知面（或多边形）编号，通过访问边（或弧段）的左右面，组成此面的边界边（有顺序）</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2009">2009 论述题</a><br>
+1、试论述面条模型与拓扑模型的主要区别和各自的优点和缺点。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2004">2004 简答题</a><br>
 2、自己设计一个有点、线、面的地图，并用链状双重独立式编码组织数据。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2001">2001 简述题</a><br>
@@ -375,7 +677,8 @@ Voronoi多边形由一组由连接两邻点直线的垂直平分线组成的多�
 <hr>
 <p><a id="数字高程模型，DEM"></a></p>
 <h3 id="数字高程模型，dem">数字高程模型，DEM</h3>
-<p>定义：</p>
+<p>定义：<br>
+数字高程模型是地形起伏的数字表达。它由对地形表面取样所得的一组点坐标数据和一套对地面进行描述的算法组成，其高程数据通常采用绝对高程。它是按一定结构组织在一起的数据组，代表着地形特征的空间分布。</p>
 <p>(1) 主要表示方法</p>
 <p>DEM的数学表示方法：<br>
 整体拟合法（傅里叶级数、高次各项式）、<br>
@@ -415,7 +718,7 @@ Voronoi多边形由一组由连接两邻点直线的垂直平分线组成的多�
 <tr>
 <td align="center">层次模型<br>（表达多种不同精度水平的数字高程模型）</td>
 <td align="center"><li>层次模型本身比较简单</li> <li>对实体的联系是固定的</li> <li>层次模型提供了良好的完整性支持</li></td>
-<td align="center"><li>现实世界中很多联系是非层次性的</li> <li>对插入和删除操作的限制较多</li> <li>结构严密，层次命令趋于程序化</li> <li>查询子女结点必须通过双案结点</li></td>
+<td align="center"><li>现实世界中很多联系是非层次性的</li> <li>对插入和删除操作的限制较多</li> <li>结构严密，层次命令趋于程序化</li> <li>查询子女结点必须通过双亲结点</li></td>
 </tr>
 </tbody>
 </table><p><strong>相关真题：</strong></p>
@@ -464,8 +767,11 @@ MBR(Minimal Boundary Rect)为包含其对应孩子的最小边界矩形。</p>
 5、简述空间索引中的BSP树，简单举例说明</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2009">2009 简答题</a><br>
 5、四叉树在GIS中有哪些用途？分别是如何实现的？</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2006">2006 简答题</a><br>
+5、为什么要对地理数据库建立空间索引，举例说明建立空间索引的方法。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2002">2002 简答题</a><br>
-5、四叉树是如何定义的？举例说明四叉树的分解过程。</p>
+5、四叉树是如何定义的？举例说明四叉树的分解过程。<br>
+7、什么是空间索引？有什么用途？</p>
 <hr>
 <p><a id="空间关系"></a></p>
 <h3 id="空间关系">空间关系</h3>
@@ -508,6 +814,8 @@ MBR(Minimal Boundary Rect)为包含其对应孩子的最小边界矩形。</p>
 <p>相关真题：</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2012">2012 简答题</a><br>
 3、什么是空间关系？空间关系包括哪些基本类型？</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2001">2001 简答题</a><br>
+1、点、线、面三者空间关系表现形式主要有哪些？</p>
 <hr>
 <p><a id="数据源及输入方法"></a></p>
 <h3 id="数据源及输入方法">数据源及输入方法</h3>
@@ -515,11 +823,17 @@ MBR(Minimal Boundary Rect)为包含其对应孩子的最小边界矩形。</p>
 <p>使用GIS软件处理数据，这些空间数据从哪来？</p>
 </blockquote>
 <p>1、数据源</p>
+<p>2、输入方法</p>
 <p><strong>相关真题：</strong></p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2012">2012 简答题</a><br>
 2、地理信息系统中空间数据输入有哪些方法？详细描述实现的过程及其特点。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2009">2009 简答题</a><br>
 1、GIS数据源主要有哪些？它们分别如何输入GIS系统？</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2001">2001 论述题</a><br>
+1、地理信息系统数据源的类型有哪些？<br>
+在地理信息系统中有哪些主要的数据输入方法？<br>
+数据输入过程中可能产生的误差有哪些形式？<br>
+引起这些误差的要因素有哪些？</p>
 <hr>
 <p><a id="纸质地图数字化"></a></p>
 <h3 id="纸质地图数字化">纸质地图数字化</h3>
@@ -657,6 +971,11 @@ GIS中对数据质量检查的方法主要有</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2002">2002 简答题</a><br>
 3、什么是空间数据的不确定性？包含哪些类型？<br>
 4、空间数据的误差可分为哪几类？举例说明。</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2001">2001 论述题</a><br>
+1、地理信息系统数据源的类型有哪些？<br>
+在地理信息系统中有哪些主要的数据输入方法？<br>
+数据输入过程中可能产生的误差有哪些形式？<br>
+引起这些误差的要因素有哪些？</p>
 <hr>
 <p><a id="空间分析"></a></p>
 <h3 id="空间分析">空间分析</h3>
@@ -702,6 +1021,10 @@ GIS中对数据质量检查的方法主要有</p>
 6、在不同专题要素的叠置分析中，叠置后常常产生一些小的多边形或区域，简述其处理的一般原则和方法。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2011">2011 简答题</a><br>
 4、在不同专题要素的叠置分析中，叠置后常常产生一些小的多边形或区域，简述其处理的一般原则和方法。</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2008">2008 论述题</a><br>
+4、请以任何一个具有叠置分析功能的GIS软件为基础说明多边形矢量数据叠分析的基本过程</p>
+<p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E8%AE%BA%E8%BF%B0%E9%A2%98.html#2004">2004 论述题</a><br>
+3、多边形矢量数据叠置分析的基本过程。</p>
 <p><a href="%E4%B8%93%E4%B8%9A%E8%AF%BE%E7%AE%80%E7%AD%94%E9%A2%98.html#2002">2002 简答题</a><br>
 8、空间叠加分析有哪几类？</p>
 <hr>
