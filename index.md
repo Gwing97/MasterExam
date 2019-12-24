@@ -19,6 +19,11 @@
  - [网站收藏夹](收藏夹.html)
 
 ----
+### 电子书：
+
+ - [计算机程序的构造和解释，](http://www.skylight.xin/SICP/book/book.html)
+
+----
 ### 网站：
 参加2018年ESRI开发大赛时制作的网站：
 [违法案件查询与制图分析](http://www.skylight.xin/webapps/)
@@ -35,5 +40,5 @@
  > 此页面使用Markdown标记语言编写，用StackEditor发布为html页面。
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTcyNjExNSwxODI2OTU4MjYzXX0=
+eyJoaXN0b3J5IjpbODI1MzQ2NzE4LDE4MjY5NTgyNjNdfQ==
 -->
