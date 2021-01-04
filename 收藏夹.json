@@ -1,0 +1,675 @@
+{
+	"元数据":{
+		"文件名": "网站收藏夹",
+		"文件类型": "JSON",
+		"作者": "高万靖",
+		"说明": "我尝试使用JSON格式来格式化地记录并整理收集来的有用而零碎的信息，这样既便于程序处理，能为之后的笔记整理、信息汇总起到帮助，又能只用记事本和浏览器就有的最基本的查找功能快速检索浏览，用替换功能管理此收藏夹",
+		// 注意：多行字符串和注释语法只有JSON5支持
+	},
+
+	"分类标签汇总": [
+		"学术",
+		"计算机",
+			"计算机.R语言",
+			"计算机.标记语言.YAML",
+			"计算机.标记语言.TOML",
+			"计算机.算法",
+			"计算机.IDL",
+			"计算机.git",
+			"计算机.TeX",
+			"计算机.TensorFlow",
+			"计算机.Web前端"
+			"计算机.计算机图形学",
+			"计算机.Linux",
+		"博客",
+		"数学",
+		"GIS",
+		"天文",
+		"电子文档",
+			"电子文档.在线",
+			"电子文档.pdf",
+			"电子文档.epub",
+		"留学"
+	],
+
+
+	"网站收藏夹列表":[
+		{
+			"标题": "SCI-HUB",
+			"链接": "http://www.sci-hub.tw",
+			"分类": ["学术"]
+		}
+		,{
+			"标题": "arXiv.org e-Print archive",
+			"链接": "https://arxiv.org/",
+			"分类": ["学术"]
+		}
+		,{
+			"标题": "An Introduction to R",
+			"链接": "https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Introduction-and-preliminaries",
+			"分类": ["计算机.R语言","电子文档.在线"]
+		}
+		,{
+			"标题": "YAML的说明文档（英文）",
+			"链接": "https://yaml.org/spec/1.2/spec.html",
+			"分类": ["计算机.标记语言.YAML","电子文档.在线"]
+		}
+		,{
+			"标题": "Martin Tournoij (“arp242”)的博客",
+			"链接": "https://www.arp242.net/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "Welcome To N3xt-Tech!",
+			"链接": "https://n3xtchen.github.io/n3xtchen/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "TOML: Tom's Obvious Minimal Language",
+			"链接": "https://toml.io/en/",
+			"分类": ["计算机.标记语言.TOML"]
+		}
+		,{
+			"标题": "TOML中文说明文档",
+			"链接": "https://toml.io/cn/v1.0.0-rc.2",
+			"分类": ["计算机.标记语言.TOML","电子文档.在线"]
+		}
+		,{
+			"标题": "freeCodeCamp",
+			"链接": "https://www.freecodecamp.org/learn",
+			"分类": ["计算机"]
+		}
+		,{
+			"标题": "Teaching basic lab skills for research computing",
+			"链接": "https://software-carpentry.org/lessons/index.html",
+			"分类": ["计算机","学术"]
+		}
+		,{
+			"标题": "LintCode 领扣 算法编程训练",
+			"链接": "https://www.lintcode.com/problem/",
+			"分类": ["计算机.算法"]
+		}
+		,{
+			"标题": "欧拉计划",
+			"链接": "https://projecteuler.net/",
+			"分类": ["计算机.算法","数学"]
+		}
+		,{
+			"标题": "天易IT学院",
+			"链接": "https://wiki.tyschool.com",
+			"分类": ["计算机"]
+		}
+		,{
+			"标题": "组团学（天易IT学院的另一链接）",
+			"链接": "https://www.zutuanxue.com/",
+			"分类": ["计算机"]
+		}
+		,{
+			"标题": "组团学（天易IT学院的另一链接）",
+			"链接": "https://www.zutuanxue.com/",
+			"分类": ["计算机"]
+		}
+		,{
+			"标题": "The R Graph Gallery",
+			"链接": "https://www.r-graph-gallery.com/",
+			"分类": ["计算机.R语言"]
+		}
+		,{
+			"标题": "数学绘图软件 GrafEq",
+			"链接": " http://www.peda.com/grafeq/",
+			"分类": ["计算机","数学"]
+		}
+		,{
+			"标题": "Introduction to IDL Programming",
+			"链接": "http://www2.geog.ucl.ac.uk/~mdisney/teaching/unix/idl/idl.html",
+			"分类": ["计算机.IDL","GIS"]
+		}
+		,{
+			"标题": "A (Very) Quick Guide to IDL: Version 1.1",
+			"链接": "http://www.mpia.de/imprs-hd/documents/IDLGuide.pdf",
+			"分类": ["计算机.IDL","GIS","电子文档.pdf"]
+		}
+		,{
+			"标题": "ProGit",
+			"链接": "https://www.progit.cn/",
+			"分类": ["计算机.git"]
+		}
+		,{
+			"标题": "ProGit电子书 中文版",
+			"链接": "https://git-scm.com/book/zh/v2",
+			"分类": ["计算机.git","电子文档.在线","电子文档.pdf","电子文档.epub"]
+		}
+		,{
+			"标题": "学术文章写作利器: TeXmacs介绍",
+			"链接": "https://www.latexstudio.net/archives/5977.html",
+			"分类": ["计算机.TeX","学术"]
+		}
+		,{
+			"标题": "TeXmacs思维导图",
+			"链接": "https://www.mindomo.com/zh/mindmap/texmacs-b207992c90c046bdbe4053cbdf88b5d5",
+			"分类": ["计算机.TeX"]
+		}
+		,{
+			"标题": "DarkSun的个人博客",
+			"链接": "https://www.lujun9972.win/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "TensorFlow中文社区",
+			"链接": "http://www.tensorfly.cn",
+			"分类": ["计算机.TensorFlow"]
+		}
+		,{
+			"标题": "数据挖掘-火龙果软件工程",
+			"链接": "http://www.uml.org.cn/sjjmwj/sjjmwj.asp",
+			"分类": ["计算机"]
+		}
+		,{
+			"标题": "教程-MarkDown",
+			"链接": "http://www.markdown.cn",
+			"分类": ["计算机.MarkDown"]
+		}
+		,{
+			"标题": "王垠的博客",
+			"链接": "http://www.yinwang.org/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "笨熊之家博客",
+			"链接": "https://twodam.net",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "面向信仰编程 draveness的博客",
+			"链接": "https://draveness.me/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "draveness的博客 为什么这么设计系列",
+			"链接": "https://draveness.me/whys-the-design/",
+			"分类": ["计算机","博客"]
+		}
+		,{
+			"标题": "oRbIt的专栏 算法系列",
+			"链接": "https://blog.csdn.net/orbit",
+			"分类": ["计算机.算法","天文"],
+			"备注": {
+				"此网站中一些有用的文章":[
+					"算法系列之十七：日历生成算法-中国公历（格里历）（上）",
+					"算法系列之十七：日历生成算法-中国公历（格里历）（下）",
+					"算法系列之十八：用天文方法计算二十四节气（上）",
+					"算法系列之十八：用天文方法计算二十四节气（下）",
+					"算法系列之十九：用天文方法计算日月合朔（新月）",
+					"算法系列之二十：计算中国农历（一）",
+					"算法系列之二十：计算中国农历（二）"
+				]
+			}
+		}
+		,{
+			"标题": "网页版演示文档 js框架",
+			"链接": "https://revealjs.com",
+			"分类": ["计算机.Web前端"]
+		}
+		,{
+			"标题": "菜鸟工具 bootstrap",
+			"链接": "http://www.runoob.com/try/bootstrap/layoutit/#",
+			"分类": ["计算机.Web前端"]
+		}
+		,{
+			"标题": "David DeSandro（包括瀑布流排版js库Masonry）",
+			"链接": "https://desandro.com/",
+			"分类": ["计算机.Web前端"]
+		}
+		,{
+			"标题": "Flutter实战",
+			"链接": "https://book.flutterchina.club",
+			"分类": ["计算机.Web前端"]
+		}
+		,{
+			"标题": "React Native中文网",
+			"链接": "https://reactnative.cn",
+			"分类": ["计算机.Web前端"]
+		}
+		,{
+			"标题": "简介 - LearnOpenGL CN",
+			"链接": "https://learnopengl-cn.github.io/intro/",
+			"分类": ["计算机.计算机图形学"]
+		}
+		,{
+			"标题": "Learn Computer Graphics From Scratch!",
+			"链接": "http://www.scratchapixel.com/",
+			"分类": ["计算机.计算机图形学"]
+		}
+		,{
+			"标题": "李秋豪的博客 翻译 解密TTY",
+			"链接": "https://www.cnblogs.com/liqiuhao/p/9031803.html",
+			"分类": ["计算机.Linux","博客"]
+		}
+		,{
+			"标题": "batkiz的博客 翻译 | Vim 的诞生",
+			"链接": "https://blog.batkiz.com/posts/2018/where-vim-came-from/",
+			"分类": ["计算机.Linux","博客"]
+		}
+		,{
+			"标题": "Bash命令行终端使用教程",
+			"链接": "http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/index.html",
+			"分类": ["计算机.Linux"]
+		}
+		,{
+			"标题": "Arch Linux Wiki",
+			"链接": "https://wiki.archlinux.org/",
+			"分类": ["计算机.Linux"]
+		}
+		,{
+			"标题": "安卓termux折腾手记：安装python库+tasker调用",
+			"链接": "https://www.jianshu.com/p/c239a7eaadba",
+			"分类": ["计算机.Linux"]
+		}
+		,{
+			"标题": "Termux高级终端安装使用配置教程",
+			"链接": "https://www.freebuf.com/geek/170510.html",
+			"分类": ["计算机.Linux"]
+		}
+		,{
+			"标题": "写上标题",
+			"链接": "附上链接",
+			"分类": ["例1"]
+		}
+
+		,{
+			"标题": "写上标题",
+			"链接": "附上链接",
+			"分类": ["例1"]
+		}
+		,{
+			"标题": "写上标题",
+			"链接": "附上链接",
+			"分类": ["例1","例2"],
+			"备注": "相关说明"
+		}
+	]
+}
+
+
+
+
+
+
+### 《计算机程序的构造和解释》 "Structure and Interpretation of Computer Programs", SICP
+
+SICP 各种版本电子书汇总
+https://sicpebook.wordpress.com/
+
+SICP 在线电子书（英文）重新美化排版
+https://sarabander.github.io/sicp/html/index.xhtml
+
+SICP 在线电子书（英文）原版 网页排版
+https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html
+
+SICP（Python描述）中文版
+https://github.com/wizardforcel/sicp-py-zh
+
+SICP（Python描述）英文原版
+http://www-inst.eecs.berkeley.edu/~cs61a/sp12/book/
+
+SICP 解题集
+http://sicp.readthedocs.io
+
+### LISP
+
+Lisp in the real world
+https://stackoverflow.com/questions/172798/lisp-in-the-real-world
+
+list of Lisp success stories
+https://franz.com/success/
+
+History of LISP
+http://www.softwarepreservation.org/projects/LISP/
+
+Common Lisp
+https://lisp-lang.org/
+https://lisp-lang.org/learn/first-steps
+
+ANSI Common Lisp 中文版
+https://acl.readthedocs.io/en/latest/zhCN/index.html
+
+翻译  Lisp神化之路
+https://blog.csdn.net/code_for_fun/article/details/83304873
+
+How Lisp Became God's Own Programming Language
+https://twobithistory.org/2018/10/14/lisp.html
+
+Real World Haskell 中文版
+http://cnhaskell.com/
+
+Haskell官网
+https://www.haskell.org/
+
+Which programming language is fastest?
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/
+
+guenchi的博客
+https://guenchi.github.io/
+    解密Chez Scheme
+    https://guenchi.github.io/0x7c06.html
+
+Chez Scheme 第 9 版用户手册
+http://cisco.github.io/ChezScheme/csug9.5/index.html
+
+cgnail的博客   Lambda演算系列之四：为什么是Y？
+https://cgnail.github.io/academic/lambda-4/
+
+Dark Side的博客    翻译 如何成为黑客
+http://www.0x08.org/docs/hacker-howto.html#respect1
+
+Paul Graham 的文章集
+http://paulgraham.com/articles.html
+
+### 计算器
+
+计算器百科
+https://calcwiki.org/
+
+HP-GCC（为HP的采用ARM架构的图形计算器开发的GCC编译器）
+http://hpgcc3.org/
+https://sourceforge.net/projects/hpgcc/
+
+HP计算器使用的RPL编程语言
+http://www.rpl2.net/
+
+FX-82/-83GT/-115/-991ES PLUS Hacking
+https://community.casiocalc.org/topic/7583-fx-82-83gt-115-991es-plus-hacking/page-1
+
+CASIO fx-ES PLUS calculators exploits Wiki
+http://casiocalc.wikidot.com
+
+WebCal 計數機網站索引  包括各种计算器程序
+http://webcal.freetzi.com
+
+## GIS
+
+WebGIS制图：
+https://kepler.gl/
+
+MapBox
+https://www.mapbox.com/
+
+NACR Community Earth System Model 美国国家大气研究中心 通用地球系统模式
+https://www.cesm.ucar.edu/
+
+PostGIS_w3cschool
+https://www.w3cschool.cn/wqf_database/wqf_database-2sr626fm.html
+
+Geospatial Analysis 6th Edition, 2020 update
+https://spatialanalysisonline.com/HTML/index.html
+
+GIS Geography
+https://gisgeography.com/
+
+Open-source maps made for self-hosting 全球地图数据
+https://openmaptiles.com/
+
+地理信息系统网站导航
+https://gis.3nice.cc
+
+中国历史地理信息系统
+https://sites.fas.harvard.edu/~chgis/data/chgis/v5/
+
+中国湖泊网络博物馆
+http://lake.data.ac.cn/lake_museum/tuji.html
+
+国际GNSS监测评估系统
+http://www.igmas.org/Gnss/Xzztpg/satpos/nav_id/3/cate_id/74.html
+http://1.85.61.214:8030
+http://1.85.61.214:8030/website/gnss_list.aspx?category_id=58
+
+空间数据可视化
+https://stamen.com
+
+中国老地图 Series L500, U.S. Army Map Service, 1954-
+https://legacy.lib.utexas.edu/maps/ams/china/
+
+earth :: 风、气象、海洋状况的全球地图
+https://earth.nullschool.net/zh-cn/
+
+老地图档案
+https://www.oldmapsonline.org
+
+Regression-kriging guide	回归克里金
+http://spatial-analyst.net/wiki/index.php?title=Regression-kriging_guide
+
+SoilGrids  Soil organic carbon stock 全球土壤有机碳库
+https://www.soilgrids.org
+
+European Fluxes Database Cluster
+http://www.europe-fluxdata.eu/
+
+software RGB 3S博客  包括各种GIS软件
+https://www.ixxin.cn/software.html
+
+National Center for Atmospheric Research
+http://www.ncl.ucar.edu
+
+IPCC Fifth Assessment Report
+https://archive.ipcc.ch/report/ar5/
+
+### 数据
+
+全球陆表特征参量(GLASS)产品 LAI数据（1km分辨率）
+http://glass-product.bnu.edu.cn/
+http://www.geodata.cn/thematicView/GLASS.html?q=%E5%8F%B6%E9%9D%A2%E7%A7%AF%E6%8C%87%E6%95%B0
+
+珞珈一号
+http://59.175.109.173:8888/
+
+思宇的天文小站     嫦娥4号科学数据熟肉
+http://siyu.china-vo.org/2020/01/31/ce-4-release-note/
+
+浏览、下载 LandSat、Sentinel卫星数据
+https://creodias.eu/
+https://scihub.copernicus.eu/
+
+NASA卫星数据下载
+https://search.earthdata.nasa.gov
+
+LandSat5定量遥感影像
+ftp://bigrs-info.com/
+
+中国气象数据网
+http://data.cma.cn/site/index.html
+
+National Renewable Energy Laboratory (NREL) Home Page | NREL
+https://www.nrel.gov/
+
+SDSS SkyServer DR14
+http://skyserver.sdss.org/dr14/en/home.aspx
+
+探月工程数据发布与信息服务系统（目前打不开）
+http://moon.bao.ac.cn/
+
+中国科学院数据云
+http://www.csdb.cn/
+
+高分三号数据下载
+http://www.cnsageo.com
+
+DIGITAL ELEVATION DATA 全球数字高程模型
+http://viewfinderpanoramas.org/dem3.html
+
+ALOS数据
+https://www.eorc.jaxa.jp/ALOS/en/dataset/dataset_index.htm
+
+ALOS 30m分辨率DEM数据
+https://www.eorc.jaxa.jp/ALOS/en/aw3d30/index.htm
+
+ALOS World 3D（估计数据收费）
+https://www.aw3d.jp/en/
+
+干货！！L波段数据(ALOS PALSAR)免费下载方式
+https://zhuanlan.zhihu.com/p/29764313
+
+EarthData 卫星数据下载（包括ALOS 12.5m分辨率DEM数据）
+https://search.asf.alaska.edu/
+
+ALOS PALSAR – Radiometric Terrain Correction（数据说明）
+https://asf.alaska.edu/data-sets/derived-data-sets/alos-palsar-rtc/alos-palsar-radiometric-terrain-correction/#DEM_Information
+
+ALOS High-Resolution Land Use and Land Cover Map Products（日本、越南）
+https://www.eorc.jaxa.jp/ALOS/en/lulc/lulc_index.htm
+
+## 留学
+
+GIS留学院校指南 | GIS-Info.github.io
+https://gis-info.github.io
+
+The Swiss Federal Institute for Forest, Snow and Landscape Research
+Working at the WSL
+https://www.wsl.ch/en/about-wsl/working-at-the-wsl.html
+ Job Application
+https://m.refline.ch/273855/index.html
+
+Helmholtz PhD Candidates
+https://www.helmholtz.de/en/jobs_talent/science/phd_candidates/
+
+Karlsruhe Institute of Technology
+https://www.kit.edu/english/
+
+Potsdam Institute for Climate Impact Research
+https://www.pik-potsdam.de/en
+
+德国学术交流中心
+https://www.daad.org.cn/zh
+
+### 外语
+
+德语水平考试（歌德语言证书）
+https://www.goethe.de/ins/cn/zh/index.html
+
+英语词根词典
+http://www.cgdict.com/
+
+日语五十音图_五十音图发音_沪江日语
+https://m.hujiang.com/jp/zt_50yin/?source=pc
+
+## 电子书资源
+
+ePUBw.COM-免费优质电子书下载
+https://epubw.com/
+
+人教版 中小学电子课本
+https://bp.pep.com.cn/jc/
+
+书格  在线古籍图书馆
+https://new.shuge.org/
+
+## 天文与航天
+
+Rocket and Space Technology
+http://www.braeunig.us/space/index.htm
+
+Stuff in Space
+http://stuffin.space/
+
+中国虚拟天文台
+http://astrocloud.china-vo.org/
+
+Simulator 3D (positions of the planets)
+http://www.astronoo.com/en/articles/positions-of-the-planets.html
+
+CMSatellite卫星轨道预报软件
+http://www.aochenmo.cn/cmsatellite/cmsatellite.html
+
+卫星轨道数据
+https://www.space-track.org
+
+Historic Spacecraft 历史上的航天器
+https://historicspacecraft.com/
+
+STK(卫星工具包)
+
+## 游戏
+
+A Dark Room
+http://adarkroom.doublespeakgames.com/
+
+2048
+https://play2048.co/
+
+2048 in 4D
+https://maigoakisame.github.io/2048-4D/
+
+围棋网页游戏 COSUMI - 免费！
+https://www.cosumi.net/zh/
+
+坎巴拉太空计划 脚本控制Mod：kRPC Documentation
+https://krpc.github.io/krpc/
+https://pypi.org/project/krpc/
+
+EarthMC
+https://earthmc.net
+
+Outerra 地球模拟引擎
+http://www.outerra.com/index.html
+
+## 杂七杂八
+
+交易者论坛
+https://www.mql5.com/
+
+线性代数学习网站
+http://immersivemath.com/ila/index.html
+
+术语在线
+http://www.termonline.cn/index.htm
+
+Stephen Wolfram: A New Kind of Science | Online—Table of Contents
+https://www.wolframscience.com/nks/
+
+ProcessOn - 免费在线作图，实时协作
+https://www.processon.com
+
+Derek's Virtual Slide Rule Gallery 虚拟计算尺
+http://www.antiquark.com/sliderule/sim/index.html
+
+量子计算云平台
+http://quantumcomputer.ac.cn/login
+
+本源量子计算云服务平台
+https://qcode.qubitonline.cn/QCode/library.html
+
+Encyclopedia of the Nations
+http://www.nationsencyclopedia.com/
+
+Darwin Online
+http://darwin-online.org.uk/
+
+BYR-IPTV
+http://tv.byr.cn/show
+
+IAM - gwing97test1
+https://console.developers.google.com/iam-admin/iam/project?project=gwing97test1
+
+艺术维基
+https://www.wikiart.org
+
+Richard Feynman Messenger Lectures
+http://www.cornell.edu/video/playlist/richard-feynman-messenger-lectures/player
+
+全网热门 BitTorrent Tracker 列表
+https://trackerslist.com/#/zh
+
+Open Source Mobile Communications
+https://osmocom.org/
+
+在线配色网站
+https://color.adobe.com/
+
+谷德设计网
+https://www.gooood.cn/
+
+联网设备搜索引擎
+https://www.shodan.io/
+
+https://zqwei-quix.ukgsdn.co.uk/simple-rocket-designer/
+
+https://www.learnengineering.org/
